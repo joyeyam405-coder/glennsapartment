@@ -1,2 +1,94 @@
- <a href="DRINKS MENU.html">BAR</a>
-  <a href="menu.html">KITCHEN</a>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vegan Menu</title>
+<style>
+  body {
+    font-family: 'Georgia', serif;
+    background-color: #f7f2ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .menu-card {
+    background-color: #f0e6db;
+    width: 350px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  .menu-card h1 {
+    font-size: 36px;
+    margin: 10px 0;
+    letter-spacing: 2px;
+  }
+  .menu-card p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #6e5a4d;
+  }
+  .circle {
+    width: 120px;
+    height: 120px;
+    background-color: #c6b9aa;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .circle::before, .circle::after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 2px;
+    background-color: #fff;
+  }
+  .circle::before {
+    transform: rotate(45deg);
+  }
+  .circle::after {
+    transform: rotate(-45deg);
+  }
+  .highlight {
+    background-color: #e6ded4;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 15px;
+  }
+  .site {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #6e5a4d;
+  }
+  /* Style links inside the site div */
+  .site a {
+    color: #6e5a4d;
+    text-decoration: none;
+  }
+  .site a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+  <div class="menu-card">
+    <p>GLENN'S APARTMENT</p>
+    <h1>MENU/PRICE LIST</h1>
+    <div class="circle"></div>
+    <div class="highlight">INTERCOM DIRECTORIES</div>
+
+    <div class="site">RECEPTION - 98</a></div>
+    <div class="site"><a href="menu.html">KITCHEN - 82</a></div>
+    <div class="site"><a href="DRINKS MENU.html">BAR - 90</a></div>
+    <div class="site"><a href="Tuck Shop.html">TUCK SHOP - 99</a></div>
+    <div class="site"><a href="Laundry.html">LAUNDRY - 82</a></div>
+  </div>
+</body>
+</html>
