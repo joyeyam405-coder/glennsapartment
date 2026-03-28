@@ -2,28 +2,39 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Restaurant Menu</title>
+<title>Tuck Shop Menu</title>
 
 <style>
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
     background-color: #e5e5e5;
-    font-size: 38px;
+}
+
+/* Main container */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
 /* Header */
 .header {
     background-color: #9c8b7f;
     color: #f2e8d5;
-    padding: 40px;
-    font-size: 60px;
+    padding: 20px;
+    font-size: 32px;
     font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
 }
 
-/* Section container */
+/* Section */
 .menu-section {
-    padding: 20px 40px;
+    margin-top: 20px;
 }
 
 /* Section title */
@@ -31,31 +42,54 @@ body {
     background-color: #9c8b7f;
     color: #f2e8d5;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 8px 16px;
     font-weight: bold;
+    border-radius: 6px;
     margin-bottom: 10px;
 }
 
-/* Line under title */
+/* Divider line */
 .line {
     height: 2px;
-    background-color: #9c8b7f;
-    margin-bottom: 20px;
+    background-color: #ddd;
+    margin-bottom: 15px;
 }
 
-/* Menu item row */
+/* Menu items */
 .menu-item {
     display: flex;
     justify-content: space-between;
-    padding: 8px 0;
-    font-size: 28px;
+    padding: 12px 0;
+    border-bottom: 1px dotted #ccc;
+    font-size: 18px;
 }
 
-/* Highlight box (like your MAINS section) */
-.highlight {
-    padding: 15px;
-    margin-top: 20px;
+/* Remove last border */
+.menu-item:last-child {
+    border-bottom: none;
 }
+
+/* Price style */
+.menu-item span:last-child {
+    font-weight: bold;
+}
+
+.home-link {
+    display: inline-block;   /* important for border sizing */
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 20px;      /* space inside the border */
+    border: 2px solid #9c8b7f; /* the border */
+    border-radius: 8px;      /* rounded corners */
+    text-decoration: #9c8b7f;
+    color: #9c8b7f;
+    font-weight: bold;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+}
+
 </style>
 
 </head>
@@ -334,7 +368,6 @@ body {
     </div>
  
  
-
     <div class="menu-item">
         <span>TUMERIC SOAP</span>
         <span>2,000</span>
@@ -432,10 +465,9 @@ body {
         <span>2,500</span>
     </div>
  
-        
+        <a href="index.html">HOME</a>
 
 </div>
-
+ 
 </body>
 </html>
- <a href="index.html">HOME</a>
