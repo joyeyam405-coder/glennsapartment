@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Laundry Menu</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #e5e5e5;
+}
+
+/* Header */
+.header {
+    background: #0b1830;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 10px 0;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+/* Grid Layout */
+.container {
+    width: 80%;
+    margin: 40px auto;
+}
+
+/* Header Row */
+.grid-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grid-header div {
+    background: #0b1830;
+    color: white;
+    padding: 15px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+/* Rows */
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 24px;
+}
+
+/* Alignment */
+.row div {
+    text-align: center;
+}
+
+.row div:first-child {
+    text-align: left;
+}
+
+/* Divider */
+.divider {
+    border-bottom: 2px dashed #050729;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 50px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.title-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    overflow: hidden;
+}
+
+/* Base line style */
+.title-line::before,
+.title-line::after {
+    content: "";
+    flex: 1;
+    border-bottom: 2px solid white;
+}
+
+/* Left line animation */
+.title-line::before {
+    margin-right: 15px;
+    transform: translateX(-100%);
+    animation: slideLeft 1s ease forwards;
+}
+
+/* Right line animation */
+.title-line::after {
+    margin-left: 15px;
+    transform: translateX(100%);
+    animation: slideRight 1s ease forwards;
+}
+
+/* Keyframes */
+@keyframes slideLeft {
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight {
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <div class="title-line">GLENN’S APARTMENT</div>
+    <h1>LAUNDRY</h1>
+</div>
+
+<div class="container">
+
+    <!-- Headings -->
+    <div class="grid-header">
+        <div>ITEMS</div>
+        <div>WASHING</div>
+        <div>PRESSING</div>
+    </div>
+
+    <!-- Rows -->
+    <div class="row divider">
+        <div>SHIRTS</div>
+        <div>500</div>
+        <div>1,000</div>
+    </div>
+
+    <div class="row">
+        <div>GOWN</div>
+        <div>500</div>
+        <div>1,000</div>
+    </div>
+
+</div>
+
+<div class="footer">
+   <a href="index.html">HOME</a>
+</div>
+
+</body>
+</html>
