@@ -2,29 +2,30 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Restaurant Menu</title>
+<title>Menu</title>
 
 <style>
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     background-color: #e5e5e5;
-    font-size: 48;
+    font-size: 38;
 }
 
 /* Header */
 .header {
     background-color: #9c8b7f;
     color: #f2e8d5;
-    padding: 40px;
-    font-size: 60px;
+    padding: 20px;
+    font-size: 40px;
     font-weight: bold;
+    text-align: center;
 }
 
 /* Section container */
 .menu-section {
     padding: 20px 40px;
-    font-size: 48px;
+    font-size: 38px;
 }
 
 /* Section title */
@@ -57,13 +58,67 @@ body {
     padding: 15px;
     margin-top: 20px;
 }
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 50px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.title-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    overflow: hidden;
+}
+
+/* Base line style */
+.title-line::before,
+.title-line::after {
+    content: "";
+    flex: 1;
+    border-bottom: 2px solid white;
+}
+
+/* Left line animation */
+.title-line::before {
+    margin-right: 15px;
+    transform: translateX(-100%);
+    animation: slideLeft 1s ease forwards;
+}
+
+/* Right line animation */
+.title-line::after {
+    margin-left: 15px;
+    transform: translateX(100%);
+    animation: slideRight 1s ease forwards;
+}
+
+/* Keyframes */
+@keyframes slideLeft {
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight {
+    to {
+        transform: translateX(0);
+    }
+}
 </style>
 
 </head>
 
 <body>
 
-<div class="header">DRINKS MENU</div>
+<div class="header">
+    <div class="title-line">GLENN’S APARTMENT</div>
+    <h1>DRINKS MENU</h1>
+</div>
 
 <div class="menu-section">
 
@@ -352,10 +407,12 @@ body {
             <span>BLACK BULLET</span>
             <span>5,000</span>
         </div>
-           
+         <div class="footer">
+         <a href="index.html">HOME</a>
+        </div>
+
          
        
     </div>
     </div>
     
-    <a href="index.html">HOME</a>
