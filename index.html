@@ -1,9 +1,9 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vegan Menu</title>
+<title>GLENNS APARTMENT</title>
 <style>
   body {
     font-family: 'Georgia', serif;
@@ -13,8 +13,11 @@
     align-items: center;
     min-height: 100vh;
   }
+  h1 {
+    color:aliceblue
+  }
   .menu-card {
-    background-color: #f0e6db;
+    background-color:#0b1830;
     width: 350px;
     padding: 30px;
     border-radius: 15px;
@@ -29,12 +32,12 @@
   .menu-card p {
     font-size: 18px;
     margin: 5px 0;
-    color: #6e5a4d;
+    color: white
   }
   .circle {
     width: 120px;
     height: 120px;
-    background-color: #c6b9aa;
+    background-color: rgb(240, 235, 235)
     border-radius: 50%;
     margin: 20px auto;
     display: flex;
@@ -42,13 +45,7 @@
     align-items: center;
     position: relative;
   }
-  .circle::before, .circle::after {
-    content: "";
-    position: absolute;
-    width: 60%;
-    height: 2px;
-    background-color: #fff;
-  }
+  
   .circle::before {
     transform: rotate(45deg);
   }
@@ -56,7 +53,7 @@
     transform: rotate(-45deg);
   }
   .highlight {
-    background-color: #e6ded4;
+    background-color: white
     padding: 5px 10px;
     border-radius: 5px;
     display: inline-block;
@@ -65,25 +62,36 @@
   .site {
     margin-top: 10px;
     font-size: 14px;
-    color: #6e5a4d;
+    color: #f7f6f5;
   }
   /* Style links inside the site div */
   .site a {
-    color: #6e5a4d;
+    color: #f7f3f1;
     text-decoration: none;
   }
   .site a:hover {
     text-decoration: underline;
   }
+  .image-container {
+    display:flex;
+    justify-content: center;
+    margin: 20px 0; /* space above & below */
+}
+
+.image-container img {
+    width: 150px; /* adjust size */
+    height: 50;
+    border-radius: 10px; /* optional: rounded edges */
+}
 </style>
 </head>
 <body>
   <div class="menu-card">
     <p>GLENN'S APARTMENT</p>
     <h1>MENU/PRICE LIST</h1>
-    <div class="circle"></div>
-    <div class="highlight"> DIRECTORIES</div>
-
+    <div class="image-container">
+      <img src="logo.png" alt="menu image">
+    </div>
  
     <div class="site"><a href="menu.html">KITCHEN </a></div>
     <div class="site"><a href="DRINKS MENU.html">BAR </a></div>
